@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pronunciation Trainer</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>🔈 Pronunciation Trainer</h1>
+
+      <section id="trainer">
+        <p id="instruction">
+          Click "Listen" to hear the word. Then try to repeat it aloud!
+        </p>
+
+        <div id="phrase-box">
+          <p id="target-phrase">synecdoche</p>
+          <div class="controls">
+            <button id="listen-btn">▶️ Listen</button>
+            <button id="repeat-btn">🎤 Repeat</button>
+            <button id="next-btn">➡️ Next Word</button>
+          </div>
+        </div>
+
+        <div id="feedback">
+          <p id="user-said">You said: <span>-</span></p>
+          <p id="confidence">Confidence: <span>--%</span></p>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./index.ts"></script>
+  </body>
+</html>
