@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text-to-Speech Dictionary</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>📘 Text-to-Speech Dictionary</h1>
+      <input type="text" id="wordInput" placeholder="Enter a word..." />
+      <div class="buttons">
+        <button id="searchBtn">Search</button>
+        <button id="speakBtn" disabled>🔊 Pronounce</button>
+      </div>
+      <div id="definitionArea" class="definition-area"></div>
+    </div>
+    <script type="module" src="/src/index.ts"></script>
+  </body>
+</html>
