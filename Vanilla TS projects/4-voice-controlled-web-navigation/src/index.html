@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Voice-Controlled Navigation</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Voice-Controlled Web Navigation</h1>
+      <button id="startBtn">🎤 Start Listening</button>
+      <p id="status">
+        Click "Start Listening" and say a command like "Go to Home"
+      </p>
+    </header>
+
+    <nav>
+      <ul>
+        <li id="nav-home" class="nav-item">Home</li>
+        <li id="nav-about" class="nav-item">About Us</li>
+        <li id="nav-services" class="nav-item">Services</li>
+        <li id="nav-contact" class="nav-item">Contact</li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="home" class="section">Welcome to the Home section.</section>
+      <section id="about" class="section">Learn more About Us here.</section>
+      <section id="services" class="section">
+        Our Services are listed here.
+      </section>
+      <section id="contact" class="section">Contact us anytime.</section>
+    </main>
+
+    <script type="module" src="/src/index.ts"></script>
+  </body>
+</html>
