@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+.container {
+  padding: 30px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.nav {
+  margin: 20px 0;
+}
+
+.nav a {
+  margin: 0 10px;
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.page {
+  margin-top: 40px;
+  font-size: 24px;
+}
+
+.voice-hint {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
