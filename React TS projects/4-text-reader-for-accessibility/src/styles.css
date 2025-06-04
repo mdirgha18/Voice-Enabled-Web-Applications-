@@ -1,0 +1,48 @@
+body {
+  font-family: sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.read-btn {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.read-btn:hover {
+  background-color: #2563eb;
+}
+
+.content p {
+  margin: 16px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.content p:hover {
+  background-color: #eef2ff;
+}
+
+.hint {
+  font-size: 14px;
+}
