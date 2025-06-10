@@ -1,0 +1,101 @@
+Awesome! Here are **coding exercises / interview-style problems** based on the topics we just discussed — useful for practicing real-world DOM manipulation, React integration, accessibility, and layout logic.
+
+---
+
+## 🧱 DOM Traversal & Readability
+
+### **1. Find Top-Level Readable Elements**
+
+**Prompt:**
+Write a function `getTopLevelReadableElements(ignoreList: string[])` that returns all top-level readable elements in the `<body>` that:
+
+* Contain non-empty text.
+* Are not matched by any selector in `ignoreList`.
+* Are not nested inside containers with only one child.
+* Do not contain another top-level readable element.
+
+📌 *Bonus:* Optimize for large documents.
+
+---
+
+### **2. Extract All Visible Paragraphs**
+
+**Prompt:**
+Create a function `getVisibleParagraphs()` that returns an array of all `<p>` elements that:
+
+* Are currently visible (`display !== 'none'`, `visibility !== 'hidden'`, `offsetParent !== null`).
+* Contain at least 10 characters of text.
+
+---
+
+## 📐 Layout & Geometry
+
+### **3. Implement Point-in-Element Check**
+
+**Prompt:**
+Write a function `isPointInsideElement(x: number, y: number, element: HTMLElement): boolean` that returns `true` if the (x, y) point lies inside the bounding box of the element.
+
+---
+
+### **4. Get First Line Height**
+
+**Prompt:**
+Implement `getLineHeightOfFirstLine(element: HTMLElement): number` that returns the height (in pixels) of the first line of text rendered inside a DOM element.
+
+---
+
+## 🖱️ React & Interactivity
+
+### **5. Hovered Paragraph Hook**
+
+**Prompt:**
+Create a React hook `useHoveredParagraphCoordinate()` that:
+
+* Returns the `HTMLElement` of the currently hovered `<p>` tag (or `null` if none).
+* Also returns the top-right corner coordinates of that element for positioning a UI element (like a tooltip).
+
+📌 *Bonus:* Use `window` event listeners to support test environments.
+
+---
+
+### **6. Play Button Component**
+
+**Prompt:**
+Build a React component `HoverPlayer` that:
+
+* Uses `useHoveredParagraphCoordinate()` to detect a hovered paragraph.
+* Renders a floating play button at the top-right corner of that paragraph.
+* On click, reads the paragraph text using the Web Speech API.
+
+---
+
+## 🔊 Accessibility & Voice
+
+### **7. Build a Simple TTS Reader**
+
+**Prompt:**
+Write a function `readTextAloud(text: string)` that uses the Web Speech API to read aloud any given string.
+
+📌 *Bonus:* Add support for pause/resume and handle interruptions.
+
+---
+
+## 🧪 Testing Challenges
+
+### **8. Mock `getBoundingClientRect()`**
+
+**Prompt:**
+In a test environment, write a Jest mock that simulates the return of `getBoundingClientRect()` to control an element’s position and size in unit tests.
+
+---
+
+## 🧠 Want More?
+
+I can generate:
+
+* **Solutions** with explanations
+* **TypeScript starter templates**
+* **Test cases** for each
+* Or convert them into a coding interview format with hints and difficulty ratings
+
+Would you like one of these turned into a full solution or challenge prompt with boilerplate code?
